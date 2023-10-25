@@ -1,0 +1,239 @@
+html {
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: url(img/backgroundHeader.png), lightgray 50% / cover no-repeat;
+    height: 506px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header article {
+    width: 85%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+header p {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+.button button {
+    margin-bottom: 5%;
+    border-radius: 28px;
+    background-color: #FFF;
+    border: none;
+    color: #23272A;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.button button:nth-child(2) {
+    background-color: #23272A;
+    color: #FFF;
+}
+
+#figure1{
+    background-image: url(img/sec1.png);
+    align-items: center;
+}
+#figure2{
+    background-image: url(img/sec2.png);
+    background-repeat: no-repeat;
+}
+#figure3{
+    background-image: url(img/sec3.png);
+    background-repeat: no-repeat;
+}
+#figure4{
+    background-image: url(img/sec4.png);
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 27px;
+    padding: 40px 24px;
+}
+
+section h2, section p {
+    width: 90%;
+    text-align: left;
+}
+
+section h2 {
+    color: #23272A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+section p {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+footer{
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    background: #23272A;
+}
+footer figure{
+    width: 162px;
+    height: 45px;
+    background-image: url(img/foot.png);
+}
+@media screen and (min-width: 1200px){
+    header {
+        background-image: url(img/pc.png);
+        
+        background-position: center;
+    }
+    header section {
+        width: 50%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 56px;
+        text-align: center;
+        margin: 5% auto;
+        width: 60%;
+    }
+    .text p {
+        text-align: center;
+    }
+    .button {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+    .button button {
+        height: 44px;  
+        padding: 10px; 
+    }
+    main .Main {
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        height: 394px;
+        margin: 0 auto;
+    }
+    #div2 {
+        flex-direction: row-reverse;
+    }
+    main .Main figure{
+        width: 60%;
+        background-repeat: no-repeat;
+    }
+    main .Main figure{
+        width: 607px;
+        height: 394px;
+        background-repeat: no-repeat;
+    }
+    #figure1{
+        background-image: url(img/sec1.png);
+        background-repeat: no-repeat;
+    }
+    #figure2{
+        background-image: url(img/sec2.png);
+        background-repeat: no-repeat;
+    }
+    #figure3{
+        background-image: url(img/sec3.png);
+        background-repeat: no-repeat;
+    }
+    #figure4{
+        background-image: url(img/sec4.png);
+        background-repeat: no-repeat;
+    }
+    main .Main .art {
+        width: 40%;   
+    }
+    section .Main h2 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    section .Main p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+    #div4 {
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+    }
+    #div4 .art {
+        width: 80%;
+    }
+    #div4 .art h2 {
+        width: 70%;
+        text-align: center;
+    }
+    #div4 .art p {
+        text-align: center;
+        width: 80%;
+    }
+    #div4 figure {
+        width: 784px;
+        height: 508px;
+        background-repeat: no-repeat;
+        
+    }
+    footer {
+        height: 134px;
+    }
+    footer figure {
+        width: 230px;
+        height: 63px;
+        background-image: url(img/foot.png);
+    }
+}
